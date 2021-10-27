@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		DB180BB227289BC200C6B901 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB180BB127289BC200C6B901 /* AppDelegate.swift */; };
 		DB180BB427289BC200C6B901 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB180BB327289BC200C6B901 /* SceneDelegate.swift */; };
-		DB180BB627289BC200C6B901 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB180BB527289BC200C6B901 /* ViewController.swift */; };
+		DB180BB627289BC200C6B901 /* LevelandPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB180BB527289BC200C6B901 /* LevelandPlayViewController.swift */; };
 		DB180BB927289BC200C6B901 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB180BB727289BC200C6B901 /* Main.storyboard */; };
 		DB180BBB27289BC300C6B901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB180BBA27289BC300C6B901 /* Assets.xcassets */; };
 		DB180BBE27289BC300C6B901 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB180BBC27289BC300C6B901 /* LaunchScreen.storyboard */; };
+		DB180BC627289E4200C6B901 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB180BC527289E4200C6B901 /* RecordViewController.swift */; };
+		DB180BC827289F4A00C6B901 /* FirstLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB180BC727289F4A00C6B901 /* FirstLevel.swift */; };
+		DB180BCA27289F5D00C6B901 /* SecondLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB180BC927289F5D00C6B901 /* SecondLevelViewController.swift */; };
+		DB180BCC27289F7200C6B901 /* ThirdLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB180BCB27289F7200C6B901 /* ThirdLevelViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DB180BAE27289BC200C6B901 /* Плиточки.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Плиточки.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB180BB127289BC200C6B901 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB180BB327289BC200C6B901 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DB180BB527289BC200C6B901 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB180BB527289BC200C6B901 /* LevelandPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelandPlayViewController.swift; sourceTree = "<group>"; };
 		DB180BB827289BC200C6B901 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB180BBA27289BC300C6B901 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB180BBD27289BC300C6B901 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB180BBF27289BC300C6B901 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB180BC527289E4200C6B901 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		DB180BC727289F4A00C6B901 /* FirstLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLevel.swift; sourceTree = "<group>"; };
+		DB180BC927289F5D00C6B901 /* SecondLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondLevelViewController.swift; sourceTree = "<group>"; };
+		DB180BCB27289F7200C6B901 /* ThirdLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdLevelViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +66,12 @@
 			children = (
 				DB180BB127289BC200C6B901 /* AppDelegate.swift */,
 				DB180BB327289BC200C6B901 /* SceneDelegate.swift */,
-				DB180BB527289BC200C6B901 /* ViewController.swift */,
+				DB180BC527289E4200C6B901 /* RecordViewController.swift */,
+				DB180BB527289BC200C6B901 /* LevelandPlayViewController.swift */,
 				DB180BB727289BC200C6B901 /* Main.storyboard */,
+				DB180BC727289F4A00C6B901 /* FirstLevel.swift */,
+				DB180BC927289F5D00C6B901 /* SecondLevelViewController.swift */,
+				DB180BCB27289F7200C6B901 /* ThirdLevelViewController.swift */,
 				DB180BBA27289BC300C6B901 /* Assets.xcassets */,
 				DB180BBC27289BC300C6B901 /* LaunchScreen.storyboard */,
 				DB180BBF27289BC300C6B901 /* Info.plist */,
@@ -137,9 +149,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB180BB627289BC200C6B901 /* ViewController.swift in Sources */,
+				DB180BB627289BC200C6B901 /* LevelandPlayViewController.swift in Sources */,
+				DB180BCA27289F5D00C6B901 /* SecondLevelViewController.swift in Sources */,
 				DB180BB227289BC200C6B901 /* AppDelegate.swift in Sources */,
 				DB180BB427289BC200C6B901 /* SceneDelegate.swift in Sources */,
+				DB180BCC27289F7200C6B901 /* ThirdLevelViewController.swift in Sources */,
+				DB180BC827289F4A00C6B901 /* FirstLevel.swift in Sources */,
+				DB180BC627289E4200C6B901 /* RecordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
