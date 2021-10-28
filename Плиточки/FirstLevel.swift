@@ -32,12 +32,12 @@ class FirstLevel: UIViewController {
     var prepareCount = 4
     var computerChangeCount = 2.0
     
-    var computerFirstChange = "button1"
-    var computerSecondChange = "button2"
-    var computerThirdChange = "button3"
-    var playerFirstChange = "button1"
-    var playerSecondChange = "button2"
-    var playerThirdChange = "button3"
+    var computerFirstChange = "button"
+    var computerSecondChange = "button"
+    var computerThirdChange = "button"
+    var playerFirstChange = "button"
+    var playerSecondChange = "button"
+    var playerThirdChange = "button"
     
     
     override func viewDidLoad() {
@@ -143,47 +143,139 @@ class FirstLevel: UIViewController {
     
     @IBAction func act1(_ sender: UIButton) {
         
+        playerFirstChange = "button1"
+        
+        if playerFirstChange == computerFirstChange {
+            out1.backgroundColor = .red
+        }
+        else { out1.backgroundColor = .black
+               prepareMessage.text = "Вы проиграли"
+               out5.backgroundColor = .white
+               out5.titleLabel?.textColor = .black
+               out5.setTitle("ОК", for: .normal)
+        }
     }
     
     @IBAction func act2(_ sender: UIButton) {
         
+        playerSecondChange = "button2"
+        
+        if playerSecondChange == computerSecondChange {
+            out2.backgroundColor = .red
+        }
+        else { out2.backgroundColor = .black
+               prepareMessage.text = "Вы проиграли"
+               out5.backgroundColor = .white
+               out5.titleLabel?.textColor = .black
+               out5.setTitle("ОК", for: .normal)
+        }
     }
     
     @IBAction func act3(_ sender: UIButton) {
         
+        playerThirdChange = "button3"
+        
+        if playerThirdChange == computerThirdChange {
+            out3.backgroundColor = .red
+        }
+        else { out3.backgroundColor = .black
+               prepareMessage.text = "Вы проиграли"
+               out5.backgroundColor = .white
+               out5.titleLabel?.textColor = .black
+               out5.setTitle("ОК", for: .normal)
+        }
     }
     
     @IBAction func act4(_ sender: UIButton) {
         
+        playerFirstChange = "button4"
+        
+        if playerFirstChange == computerFirstChange {
+            out4.backgroundColor = .red
+        }
+        else { out4.backgroundColor = .black
+               prepareMessage.text = "Вы проиграли"
+               out5.backgroundColor = .white
+               out5.titleLabel?.textColor = .black
+               out5.setTitle("ОК", for: .normal)
+        }
     }
     
     @IBAction func act5(_ sender: UIButton) {
-//        let x = firstcolumn.randomElement()
-//        switch x {
-//        case "button1": out1.backgroundColor = .red
-//        case "button4": out4.backgroundColor = .red
-//        case "button7": out7.backgroundColor = .red
-//        default:
-//            return
-//        }
         
-    
+        playerSecondChange = "button5"
+        
+        if playerSecondChange == computerSecondChange {
+            out5.backgroundColor = .red
+        }
+        else { out5.backgroundColor = .black
+               prepareMessage.text = "Вы проиграли"
+               out5.backgroundColor = .white
+               out5.titleLabel?.textColor = .black
+               out5.setTitle("ОК", for: .normal)
+        }
     }
     
     @IBAction func act6(_ sender: UIButton) {
         
+        playerThirdChange = "button6"
+        
+        if playerThirdChange == computerThirdChange {
+            out6.backgroundColor = .red
+        }
+        else { out6.backgroundColor = .black
+               prepareMessage.text = "Вы проиграли"
+               out5.backgroundColor = .white
+               out5.titleLabel?.textColor = .black
+               out5.setTitle("ОК", for: .normal)
+        }
     }
     
     @IBAction func act7(_ sender: UIButton) {
         
+        playerFirstChange = "button7"
+        
+         if playerFirstChange == computerFirstChange {
+            out7.backgroundColor = .red
+        }
+        else { out7.backgroundColor = .black
+               prepareMessage.text = "Вы проиграли"
+               out5.backgroundColor = .white
+               out5.titleLabel?.textColor = .black
+               out5.setTitle("ОК", for: .normal)
+        }
     }
+    
     @IBAction func act8(_ sender: UIButton) {
         
+        playerSecondChange = "button8"
+        
+        if playerSecondChange == computerSecondChange {
+            out8.backgroundColor = .red
+        }
+        else { out8.backgroundColor = .black
+               prepareMessage.text = "Вы проиграли"
+               out5.backgroundColor = .white
+               out5.titleLabel?.textColor = .black
+               out5.setTitle("ОК", for: .normal)
+        }
     }
     
     @IBAction func act9(_ sender: UIButton) {
         
+        playerThirdChange = "button9"
+        
+        if playerThirdChange == computerThirdChange {
+            out9.backgroundColor = .red
+        }
+        else { out9.backgroundColor = .black
+               prepareMessage.text = "Вы проиграли"
+               out5.backgroundColor = .white
+               out5.titleLabel?.textColor = .black
+               out5.setTitle("ОК", for: .normal)
+        }
     }
 }
 
-//Сохранить xyz которые выберет пользователь и сравнить их с сохраненными xyz выбранными с помощью randomelement
+
+//Добавить счетчик ошибок
