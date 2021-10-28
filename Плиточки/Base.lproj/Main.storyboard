@@ -89,19 +89,61 @@
                                     <segue destination="Ij3-ye-V8a" kind="show" identifier="thirdlvlsegue" id="d5j-m4-TJB"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рекорд 0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="woz-zi-xkh">
+                                <rect key="frame" x="116" y="272" width="182" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="KSh-dh-ndf"/>
+                                    <constraint firstAttribute="width" constant="182" id="bJ2-uK-Pyg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рекорд 0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoQ-i5-3Td">
+                                <rect key="frame" x="116" y="486" width="182" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="UyA-Bp-AiZ"/>
+                                    <constraint firstAttribute="width" constant="182" id="XFO-xO-ZAX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рекорд 0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MA3-BO-Gl5">
+                                <rect key="frame" x="116" y="702" width="182" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1cj-oc-x9a"/>
+                                    <constraint firstAttribute="width" constant="182" id="ypT-Ap-M7S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Kb2-aQ-VfC"/>
                         <color key="backgroundColor" red="1" green="0.83878623414425946" blue="0.98114633667582707" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="XXs-0b-Uiq" firstAttribute="top" secondItem="woz-zi-xkh" secondAttribute="bottom" constant="86" id="1Ns-PE-R0m"/>
                             <constraint firstItem="XXs-0b-Uiq" firstAttribute="top" secondItem="dzD-5V-Rqj" secondAttribute="bottom" constant="135" id="5k5-Sq-sQL"/>
                             <constraint firstItem="Rvk-o7-0f0" firstAttribute="leading" secondItem="Kb2-aQ-VfC" secondAttribute="leading" constant="20" id="73c-JJ-VNm"/>
+                            <constraint firstItem="woz-zi-xkh" firstAttribute="leading" secondItem="Kb2-aQ-VfC" secondAttribute="leading" constant="116" id="8eS-5C-ItJ"/>
                             <constraint firstItem="Rvk-o7-0f0" firstAttribute="top" secondItem="Kb2-aQ-VfC" secondAttribute="top" id="AGG-rU-RDS"/>
+                            <constraint firstItem="uoQ-i5-3Td" firstAttribute="leading" secondItem="Kb2-aQ-VfC" secondAttribute="leading" constant="116" id="DwC-pn-xLY"/>
                             <constraint firstItem="XXs-0b-Uiq" firstAttribute="centerX" secondItem="Kb2-aQ-VfC" secondAttribute="centerX" id="JGr-N9-SOK"/>
+                            <constraint firstItem="Kb2-aQ-VfC" firstAttribute="trailing" secondItem="woz-zi-xkh" secondAttribute="trailing" constant="116" id="K4z-Yw-nTk"/>
+                            <constraint firstItem="uoQ-i5-3Td" firstAttribute="top" secondItem="XXs-0b-Uiq" secondAttribute="bottom" constant="-2" id="KtB-JP-gL0"/>
+                            <constraint firstItem="MA3-BO-Gl5" firstAttribute="leading" secondItem="Kb2-aQ-VfC" secondAttribute="leading" constant="116" id="TjI-xK-ati"/>
                             <constraint firstItem="Wta-2d-la6" firstAttribute="centerX" secondItem="Kb2-aQ-VfC" secondAttribute="centerX" id="Ur1-bH-35T"/>
+                            <constraint firstItem="Kb2-aQ-VfC" firstAttribute="trailing" secondItem="MA3-BO-Gl5" secondAttribute="trailing" constant="116" id="WVh-RB-bmi"/>
+                            <constraint firstItem="Kb2-aQ-VfC" firstAttribute="bottom" secondItem="MA3-BO-Gl5" secondAttribute="bottom" constant="61" id="Wxg-BW-G4V"/>
                             <constraint firstItem="Kb2-aQ-VfC" firstAttribute="trailing" secondItem="Rvk-o7-0f0" secondAttribute="trailing" constant="20" id="aox-xw-a6x"/>
+                            <constraint firstItem="Wta-2d-la6" firstAttribute="top" secondItem="uoQ-i5-3Td" secondAttribute="bottom" constant="87" id="ee8-Cd-bel"/>
                             <constraint firstItem="dzD-5V-Rqj" firstAttribute="top" secondItem="Rvk-o7-0f0" secondAttribute="bottom" constant="100" id="jqw-CA-3DC"/>
                             <constraint firstItem="dzD-5V-Rqj" firstAttribute="centerX" secondItem="Kb2-aQ-VfC" secondAttribute="centerX" id="ntM-rG-d34"/>
+                            <constraint firstItem="woz-zi-xkh" firstAttribute="top" secondItem="dzD-5V-Rqj" secondAttribute="bottom" constant="-1" id="oWM-ME-Prz"/>
+                            <constraint firstItem="Kb2-aQ-VfC" firstAttribute="trailing" secondItem="uoQ-i5-3Td" secondAttribute="trailing" constant="116" id="rJ4-2u-Ffw"/>
                             <constraint firstItem="Wta-2d-la6" firstAttribute="top" secondItem="XXs-0b-Uiq" secondAttribute="bottom" constant="135" id="rwJ-tf-t6p"/>
+                            <constraint firstItem="MA3-BO-Gl5" firstAttribute="top" secondItem="Wta-2d-la6" secondAttribute="bottom" constant="-1" id="tNw-zQ-oVh"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Выбор уровня" image="play.circle.fill" catalog="system" id="rtQ-Jc-5iy">
@@ -322,6 +364,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="hqk-iN-9JX"/>
                     <connections>
+                        <outlet property="countLabel" destination="8xn-ut-Rmk" id="VRX-rp-XEY"/>
                         <outlet property="out1" destination="QOH-S6-1iG" id="AVQ-C5-X1m"/>
                         <outlet property="out2" destination="J4G-S3-5Wv" id="rwD-Xh-1R7"/>
                         <outlet property="out3" destination="3d0-Bp-End" id="4p0-vS-Hp8"/>
@@ -331,6 +374,8 @@
                         <outlet property="out7" destination="UNZ-S6-yXQ" id="szP-Yc-xSR"/>
                         <outlet property="out8" destination="l8f-9Z-as2" id="Tt4-sM-Ay8"/>
                         <outlet property="out9" destination="epJ-ge-Nxb" id="XE2-Ba-0YE"/>
+                        <outlet property="prepareMessage" destination="vsd-aQ-UHj" id="IKV-75-ueZ"/>
+                        <outlet property="scoreLabel" destination="D9Z-Ji-ihb" id="1p6-Nj-g9p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t3v-vy-176" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

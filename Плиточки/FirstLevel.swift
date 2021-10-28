@@ -22,13 +22,19 @@ class FirstLevel: UIViewController {
     @IBOutlet weak var out7: UIButton!
     @IBOutlet weak var out8: UIButton!
     @IBOutlet weak var out9: UIButton!
-
+    @IBOutlet weak var countLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var prepareMessage: UILabel!
+    
+    
     var timer = Timer()
     var prepareCount = 4
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        interactionOff()
         
         out1.layer.borderWidth = 2
         out2.layer.borderWidth = 2
@@ -46,9 +52,42 @@ class FirstLevel: UIViewController {
     }
     
     @objc func PrepareForBeginTimer() {
-        
+        prepareCount -= 1
+        countLabel.text = String("\(prepareCount)")
+        if prepareCount == 0 {
+            countLabel.isHidden = true
+            prepareMessage.text = "Внимание"
+        } else if prepareCount == -2 {
+            prepareMessage.text = "Повтори!"
+            interactionOn()
+            timer.invalidate()
+            //prepareCount = 4
+        } else { return }
     }
   
+    func interactionOff() {
+        out1.isUserInteractionEnabled = false
+        out2.isUserInteractionEnabled = false
+        out3.isUserInteractionEnabled = false
+        out4.isUserInteractionEnabled = false
+        out5.isUserInteractionEnabled = false
+        out6.isUserInteractionEnabled = false
+        out7.isUserInteractionEnabled = false
+        out8.isUserInteractionEnabled = false
+        out9.isUserInteractionEnabled = false
+    }
+    
+    func interactionOn() {
+        out1.isUserInteractionEnabled = true
+        out2.isUserInteractionEnabled = true
+        out3.isUserInteractionEnabled = true
+        out4.isUserInteractionEnabled = true
+        out5.isUserInteractionEnabled = true
+        out6.isUserInteractionEnabled = true
+        out7.isUserInteractionEnabled = true
+        out8.isUserInteractionEnabled = true
+        out9.isUserInteractionEnabled = true
+    }
     
     @IBAction func act1(_ sender: UIButton) {
         
@@ -94,3 +133,5 @@ class FirstLevel: UIViewController {
         
     }
 }
+
+//Сохранить xyz которые выберет пользователь и сравнить их с сохраненными xyz выбранными с помощью randomelement
