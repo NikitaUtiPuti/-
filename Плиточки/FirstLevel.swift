@@ -39,6 +39,8 @@ class FirstLevel: UIViewController {
     var playerSecondChange = "button"
     var playerThirdChange = "button"
     
+    var score = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,7 +59,6 @@ class FirstLevel: UIViewController {
         
       timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(PrepareForBeginTimer), userInfo: nil, repeats: true)
         
-        
     }
     
     @objc func PrepareForBeginTimer() {
@@ -70,7 +71,7 @@ class FirstLevel: UIViewController {
             timer1 = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(ComputerChangeTimer), userInfo: nil, repeats: true)
             prepareMessage.text = "Повтори!"
             interactionOn()
-            timer.invalidate()
+          //  timer.invalidate()
             //prepareCount = 4
         } else { return }
     }
@@ -186,6 +187,24 @@ class FirstLevel: UIViewController {
         out5.setTitle("ОК", for: .normal)
     }
     
+    func Win() {
+        if playerFirstChange == computerFirstChange,
+           playerSecondChange == computerSecondChange,
+           playerThirdChange == computerThirdChange {
+        score += 1
+        scoreLabel.text = "\(score)"
+        allBackgroundDefault()
+        computerFirstChange = "button"
+        computerSecondChange = "button"
+        computerThirdChange = "button"
+        playerFirstChange = "button"
+        playerSecondChange = "button"
+        playerThirdChange = "button"
+        computerChangeCount = 2.0
+        prepareCount = -2
+        }
+    }
+    
     @IBAction func act1(_ sender: UIButton) {
         
         playerFirstChange = "button1"
@@ -196,6 +215,7 @@ class FirstLevel: UIViewController {
         else {
                Lose()
         }
+        Win()
     }
     
     @IBAction func act2(_ sender: UIButton) {
@@ -208,6 +228,7 @@ class FirstLevel: UIViewController {
         else {
                Lose()
         }
+        Win()
     }
     
     @IBAction func act3(_ sender: UIButton) {
@@ -220,6 +241,7 @@ class FirstLevel: UIViewController {
         else {
                Lose()
         }
+        Win()
     }
     
     @IBAction func act4(_ sender: UIButton) {
@@ -232,6 +254,7 @@ class FirstLevel: UIViewController {
         else {
                Lose()
         }
+        Win()
     }
     
     @IBAction func act5(_ sender: UIButton) {
@@ -244,6 +267,7 @@ class FirstLevel: UIViewController {
         else {
                Lose()
         }
+        Win()
     }
     
     @IBAction func act6(_ sender: UIButton) {
@@ -256,6 +280,7 @@ class FirstLevel: UIViewController {
         else {
                Lose()
         }
+        Win()
     }
     
     @IBAction func act7(_ sender: UIButton) {
@@ -268,6 +293,7 @@ class FirstLevel: UIViewController {
         else {
                Lose()
         }
+        Win()
     }
     
     @IBAction func act8(_ sender: UIButton) {
@@ -280,6 +306,7 @@ class FirstLevel: UIViewController {
         else {
                Lose()
         }
+        Win()
     }
     
     @IBAction func act9(_ sender: UIButton) {
@@ -292,8 +319,13 @@ class FirstLevel: UIViewController {
         else {
                Lose()
         }
+        Win()
     }
 }
 
 
 //Добавить счетчик ошибок
+//Добавить лейбл Отлично при каждом прибавлении счета
+// Запретить интеракшны по порядку
+// передавать данные в рекорд
+//Тестинг

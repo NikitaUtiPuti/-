@@ -174,7 +174,6 @@
                                     <constraint firstAttribute="height" constant="119" id="O5E-CO-PAU"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="bDh-Zz-O3y"/>
                                 </constraints>
-                                <state key="normal" title="1"/>
                                 <connections>
                                     <action selector="act1:" destination="djI-zG-5q4" eventType="touchUpInside" id="3Qg-9K-JIb"/>
                                 </connections>
@@ -186,7 +185,6 @@
                                     <constraint firstAttribute="height" constant="119" id="kGb-wg-O18"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="zQ0-JR-5Tx"/>
                                 </constraints>
-                                <state key="normal" title="2"/>
                                 <connections>
                                     <action selector="act2:" destination="djI-zG-5q4" eventType="touchUpInside" id="iAL-cJ-20c"/>
                                 </connections>
@@ -198,7 +196,6 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="JIW-5X-ovZ"/>
                                     <constraint firstAttribute="height" constant="119" id="LCv-1e-0Zu"/>
                                 </constraints>
-                                <state key="normal" title="3"/>
                                 <connections>
                                     <action selector="act3:" destination="djI-zG-5q4" eventType="touchUpInside" id="uYE-US-NlL"/>
                                 </connections>
@@ -210,7 +207,6 @@
                                     <constraint firstAttribute="height" constant="119" id="2Kb-ok-8PX"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="jbC-pU-4ZH"/>
                                 </constraints>
-                                <state key="normal" title="4"/>
                                 <connections>
                                     <action selector="act4:" destination="djI-zG-5q4" eventType="touchUpInside" id="lR8-NY-hOj"/>
                                 </connections>
@@ -237,7 +233,6 @@
                                     <constraint firstAttribute="height" constant="119" id="52Y-Wz-eJ2"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="SAJ-Af-YIX"/>
                                 </constraints>
-                                <state key="normal" title="6"/>
                                 <connections>
                                     <action selector="act6:" destination="djI-zG-5q4" eventType="touchUpInside" id="HAc-e0-6eJ"/>
                                 </connections>
@@ -249,7 +244,6 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="KMg-FE-Zrf"/>
                                     <constraint firstAttribute="height" constant="119" id="X2l-je-X3u"/>
                                 </constraints>
-                                <state key="normal" title="7"/>
                                 <connections>
                                     <action selector="act7:" destination="djI-zG-5q4" eventType="touchUpInside" id="mhh-bn-Lts"/>
                                 </connections>
@@ -261,7 +255,6 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="8CW-ve-fc0"/>
                                     <constraint firstAttribute="height" constant="119" id="uMG-8e-3v2"/>
                                 </constraints>
-                                <state key="normal" title="8"/>
                                 <connections>
                                     <action selector="act8:" destination="djI-zG-5q4" eventType="touchUpInside" id="WPy-3s-Um7"/>
                                 </connections>
@@ -273,7 +266,6 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="FXT-Bu-URW"/>
                                     <constraint firstAttribute="height" constant="119" id="fDK-y4-aQ0"/>
                                 </constraints>
-                                <state key="normal" title="9"/>
                                 <connections>
                                     <action selector="act9:" destination="djI-zG-5q4" eventType="touchUpInside" id="9Jb-y6-Qrj"/>
                                 </connections>
