@@ -106,15 +106,15 @@ class FirstLevel: UIViewController {
     }
     
     func allBackgroundDefault() {
-        out1.backgroundColor = UIColor.brown
-        out2.backgroundColor = UIColor.brown
-        out3.backgroundColor = UIColor.brown
-        out4.backgroundColor = UIColor(named: "B6F3F5")
-        out5.backgroundColor = UIColor(named: "B6F3F5")
-        out6.backgroundColor = UIColor(named: "B6F3F5")
-        out7.backgroundColor = UIColor(named: "B6F3F5")
-        out8.backgroundColor = UIColor(named: "B6F3F5")
-        out9.backgroundColor = UIColor(named: "B6F3F5")
+        out1.backgroundColor = UIColor(named: "Плитки")
+        out2.backgroundColor = UIColor(named: "Плитки")
+        out3.backgroundColor = UIColor(named: "Плитки")
+        out4.backgroundColor = UIColor(named: "Плитки")
+        out5.backgroundColor = UIColor(named: "Плитки")
+        out6.backgroundColor = UIColor(named: "Плитки")
+        out7.backgroundColor = UIColor(named: "Плитки")
+        out8.backgroundColor = UIColor(named: "Плитки")
+        out9.backgroundColor = UIColor(named: "Плитки")
     }
   
     func interactionOff() {
