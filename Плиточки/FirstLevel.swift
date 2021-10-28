@@ -28,7 +28,16 @@ class FirstLevel: UIViewController {
     
     
     var timer = Timer()
+    var timer1 = Timer()
     var prepareCount = 4
+    var computerChangeCount = 2.0
+    
+    var computerFirstChange = "button1"
+    var computerSecondChange = "button2"
+    var computerThirdChange = "button3"
+    var playerFirstChange = "button1"
+    var playerSecondChange = "button2"
+    var playerThirdChange = "button3"
     
     
     override func viewDidLoad() {
@@ -58,11 +67,54 @@ class FirstLevel: UIViewController {
             countLabel.isHidden = true
             prepareMessage.text = "Внимание"
         } else if prepareCount == -2 {
+            timer1 = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(ComputerChangeTimer), userInfo: nil, repeats: true)
             prepareMessage.text = "Повтори!"
             interactionOn()
             timer.invalidate()
             //prepareCount = 4
         } else { return }
+    }
+    
+    @objc func ComputerChangeTimer() {
+        computerChangeCount -= 0.5
+        switch computerChangeCount {
+        case 1.5: computerFirstChange = (firstcolumn.randomElement()!)
+        case 1.0: computerSecondChange = (secondcolumn.randomElement()!)
+            switch computerFirstChange {
+            case "button1": out1.backgroundColor = .red
+            case "button4": out4.backgroundColor = .red
+            case "button7": out7.backgroundColor = .red
+            default: return
+        }
+        case 0.5: computerThirdChange = (thirdcolumn.randomElement()!)
+            switch computerSecondChange {
+            case "button2": out2.backgroundColor = .red
+            case "button5": out5.backgroundColor = .red
+            case "button8": out8.backgroundColor = .red
+            default: return
+            }
+        case 0:
+            switch computerThirdChange {
+            case "button3": out3.backgroundColor = .red
+            case "button6": out6.backgroundColor = .red
+            case "button9": out9.backgroundColor = .red
+            default: return
+            }
+        case -0.5: allBackgroundDefault()
+        default: return
+        }
+    }
+    
+    func allBackgroundDefault() {
+        out1.backgroundColor = UIColor.brown
+        out2.backgroundColor = UIColor.brown
+        out3.backgroundColor = UIColor.brown
+        out4.backgroundColor = UIColor(named: "B6F3F5")
+        out5.backgroundColor = UIColor(named: "B6F3F5")
+        out6.backgroundColor = UIColor(named: "B6F3F5")
+        out7.backgroundColor = UIColor(named: "B6F3F5")
+        out8.backgroundColor = UIColor(named: "B6F3F5")
+        out9.backgroundColor = UIColor(named: "B6F3F5")
     }
   
     func interactionOff() {
