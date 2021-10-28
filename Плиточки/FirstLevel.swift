@@ -141,6 +141,51 @@ class FirstLevel: UIViewController {
         out9.isUserInteractionEnabled = true
     }
     
+    func Lose() {
+        switch computerFirstChange {
+        case "button1": out1.backgroundColor = .red
+                        out4.backgroundColor = .black
+                        out7.backgroundColor = .black
+        case "button4": out4.backgroundColor = .red
+                        out1.backgroundColor = .black
+                        out7.backgroundColor = .black
+        case "button7": out7.backgroundColor = .red
+                        out1.backgroundColor = .black
+                        out4.backgroundColor = .black
+        default: return
+        }
+        switch computerSecondChange {
+        case "button2": out2.backgroundColor = .red
+                        out5.backgroundColor = .black
+                        out8.backgroundColor = .black
+        case "button5": out5.backgroundColor = .red
+                        out2.backgroundColor = .black
+                        out8.backgroundColor = .black
+        case "button8": out8.backgroundColor = .red
+                        out2.backgroundColor = .black
+                        out5.backgroundColor = .black
+        default: return
+        }
+        switch computerThirdChange {
+        case "button3": out3.backgroundColor = .red
+                        out6.backgroundColor = .black
+                        out9.backgroundColor = .black
+        case "button6": out6.backgroundColor = .red
+                        out3.backgroundColor = .black
+                        out9.backgroundColor = .black
+        case "button9": out9.backgroundColor = .red
+                        out3.backgroundColor = .black
+                        out6.backgroundColor = .black
+        default: return
+        }
+        interactionOff()
+        out5.isUserInteractionEnabled = true
+        prepareMessage.text = "Вы проиграли"
+        out5.backgroundColor = .white
+        out5.titleLabel?.textColor = .label
+        out5.setTitle("ОК", for: .normal)
+    }
+    
     @IBAction func act1(_ sender: UIButton) {
         
         playerFirstChange = "button1"
@@ -148,11 +193,8 @@ class FirstLevel: UIViewController {
         if playerFirstChange == computerFirstChange {
             out1.backgroundColor = .red
         }
-        else { out1.backgroundColor = .black
-               prepareMessage.text = "Вы проиграли"
-               out5.backgroundColor = .white
-               out5.titleLabel?.textColor = .black
-               out5.setTitle("ОК", for: .normal)
+        else {
+               Lose()
         }
     }
     
@@ -163,11 +205,8 @@ class FirstLevel: UIViewController {
         if playerSecondChange == computerSecondChange {
             out2.backgroundColor = .red
         }
-        else { out2.backgroundColor = .black
-               prepareMessage.text = "Вы проиграли"
-               out5.backgroundColor = .white
-               out5.titleLabel?.textColor = .black
-               out5.setTitle("ОК", for: .normal)
+        else {
+               Lose()
         }
     }
     
@@ -178,11 +217,8 @@ class FirstLevel: UIViewController {
         if playerThirdChange == computerThirdChange {
             out3.backgroundColor = .red
         }
-        else { out3.backgroundColor = .black
-               prepareMessage.text = "Вы проиграли"
-               out5.backgroundColor = .white
-               out5.titleLabel?.textColor = .black
-               out5.setTitle("ОК", for: .normal)
+        else {
+               Lose()
         }
     }
     
@@ -193,11 +229,8 @@ class FirstLevel: UIViewController {
         if playerFirstChange == computerFirstChange {
             out4.backgroundColor = .red
         }
-        else { out4.backgroundColor = .black
-               prepareMessage.text = "Вы проиграли"
-               out5.backgroundColor = .white
-               out5.titleLabel?.textColor = .black
-               out5.setTitle("ОК", for: .normal)
+        else {
+               Lose()
         }
     }
     
@@ -208,11 +241,8 @@ class FirstLevel: UIViewController {
         if playerSecondChange == computerSecondChange {
             out5.backgroundColor = .red
         }
-        else { out5.backgroundColor = .black
-               prepareMessage.text = "Вы проиграли"
-               out5.backgroundColor = .white
-               out5.titleLabel?.textColor = .black
-               out5.setTitle("ОК", for: .normal)
+        else {
+               Lose()
         }
     }
     
@@ -223,11 +253,8 @@ class FirstLevel: UIViewController {
         if playerThirdChange == computerThirdChange {
             out6.backgroundColor = .red
         }
-        else { out6.backgroundColor = .black
-               prepareMessage.text = "Вы проиграли"
-               out5.backgroundColor = .white
-               out5.titleLabel?.textColor = .black
-               out5.setTitle("ОК", for: .normal)
+        else {
+               Lose()
         }
     }
     
@@ -238,11 +265,8 @@ class FirstLevel: UIViewController {
          if playerFirstChange == computerFirstChange {
             out7.backgroundColor = .red
         }
-        else { out7.backgroundColor = .black
-               prepareMessage.text = "Вы проиграли"
-               out5.backgroundColor = .white
-               out5.titleLabel?.textColor = .black
-               out5.setTitle("ОК", for: .normal)
+        else {
+               Lose()
         }
     }
     
@@ -253,11 +277,8 @@ class FirstLevel: UIViewController {
         if playerSecondChange == computerSecondChange {
             out8.backgroundColor = .red
         }
-        else { out8.backgroundColor = .black
-               prepareMessage.text = "Вы проиграли"
-               out5.backgroundColor = .white
-               out5.titleLabel?.textColor = .black
-               out5.setTitle("ОК", for: .normal)
+        else {
+               Lose()
         }
     }
     
@@ -268,11 +289,8 @@ class FirstLevel: UIViewController {
         if playerThirdChange == computerThirdChange {
             out9.backgroundColor = .red
         }
-        else { out9.backgroundColor = .black
-               prepareMessage.text = "Вы проиграли"
-               out5.backgroundColor = .white
-               out5.titleLabel?.textColor = .black
-               out5.setTitle("ОК", for: .normal)
+        else {
+               Lose()
         }
     }
 }
