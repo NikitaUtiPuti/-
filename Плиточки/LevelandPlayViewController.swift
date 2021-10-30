@@ -10,12 +10,11 @@ import UIKit
 class LevelandPlayViewController: UIViewController {
 
     
+    @IBOutlet weak var thirdLvlRecord: UILabel!
+    @IBOutlet weak var secondLvlRecord: UILabel!
+    @IBOutlet weak var firstLvlRecord: UILabel!
     @IBOutlet weak var firstLevel: UIButton!
-    
-    
     @IBOutlet weak var secondLevel: UIButton!
-    
-    
     @IBOutlet weak var thirdLevel: UIButton!
     
     override func viewDidLoad() {
@@ -42,14 +41,14 @@ class LevelandPlayViewController: UIViewController {
     }
     
     
+    @IBAction func unwindSegueToMainScreen(segue: UIStoryboardSegue) {
+        guard segue.identifier == "unwindSegue" else {return}
+        guard let game = segue.source as? FirstLevel else {return}
+        let schet = game.scoreLabel.text!
+        self.firstLvlRecord.text = "Рекорд \(schet)"
+    }
     
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "firstlvlsegue" {
-//
-//               let _ = segue.destination as! FirstLevelViewController
-//
-//        }
+
     
 }
 

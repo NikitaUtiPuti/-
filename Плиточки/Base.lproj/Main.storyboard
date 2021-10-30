@@ -151,8 +151,11 @@
                     </tabBarItem>
                     <connections>
                         <outlet property="firstLevel" destination="dzD-5V-Rqj" id="tcF-j8-qiN"/>
+                        <outlet property="firstLvlRecord" destination="woz-zi-xkh" id="Y7L-8T-7tw"/>
                         <outlet property="secondLevel" destination="XXs-0b-Uiq" id="X2u-y4-KMO"/>
+                        <outlet property="secondLvlRecord" destination="uoQ-i5-3Td" id="Lh9-Hr-xOj"/>
                         <outlet property="thirdLevel" destination="Wta-2d-la6" id="3iq-Li-Jvy"/>
+                        <outlet property="thirdLvlRecord" destination="MA3-BO-Gl5" id="2Bl-04-SHH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W4F-PZ-9ur" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -371,9 +374,11 @@
                         <outlet property="out9" destination="epJ-ge-Nxb" id="XE2-Ba-0YE"/>
                         <outlet property="prepareMessage" destination="vsd-aQ-UHj" id="IKV-75-ueZ"/>
                         <outlet property="scoreLabel" destination="D9Z-Ji-ihb" id="1p6-Nj-g9p"/>
+                        <segue destination="orT-1v-nZA" kind="unwind" identifier="unwindSegue" unwindAction="unwindSegueToMainScreenWithSegue:" id="iec-Fc-ccK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t3v-vy-176" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="orT-1v-nZA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1095.6521739130435" y="-267.1875"/>
         </scene>

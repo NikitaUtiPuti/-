@@ -41,6 +41,7 @@ class FirstLevel: UIViewController {
     
     var score = 0
     
+    var goodjob = ["Хорошо!","Отлично!","Молодец!","Так держать!"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,10 +72,10 @@ class FirstLevel: UIViewController {
             timer1 = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(ComputerChangeTimer), userInfo: nil, repeats: true)
             prepareMessage.text = "Повтори!"
             interactionOn()
-          //  timer.invalidate()
+            //timer.invalidate()
             //prepareCount = 4
         } else { return }
-    }
+}
     
     @objc func ComputerChangeTimer() {
         computerChangeCount -= 0.5
@@ -102,6 +103,7 @@ class FirstLevel: UIViewController {
             default: return
             }
         case -0.5: allBackgroundDefault()
+                   prepareMessage.text = "Повтори!"
         default: return
         }
     }
@@ -202,8 +204,12 @@ class FirstLevel: UIViewController {
         playerThirdChange = "button"
         computerChangeCount = 2.0
         prepareCount = -2
+        prepareMessage.text = goodjob.randomElement()
         }
     }
+    
+    
+    
     
     @IBAction func act1(_ sender: UIButton) {
         
@@ -222,7 +228,8 @@ class FirstLevel: UIViewController {
         
         playerSecondChange = "button2"
         
-        if playerSecondChange == computerSecondChange {
+        if playerSecondChange == computerSecondChange,
+           playerFirstChange != "button"             {
             out2.backgroundColor = .red
         }
         else {
@@ -235,7 +242,8 @@ class FirstLevel: UIViewController {
         
         playerThirdChange = "button3"
         
-        if playerThirdChange == computerThirdChange {
+        if playerThirdChange == computerThirdChange,
+        playerSecondChange != "button"             {
             out3.backgroundColor = .red
         }
         else {
@@ -261,20 +269,27 @@ class FirstLevel: UIViewController {
         
         playerSecondChange = "button5"
         
-        if playerSecondChange == computerSecondChange {
+        if playerSecondChange == computerSecondChange,
+            playerFirstChange != "button"            {
             out5.backgroundColor = .red
         }
         else {
                Lose()
         }
         Win()
+        
+        
+        if prepareMessage.text == "Вы проиграли" {
+            performSegue(withIdentifier: "unwindSegue", sender: nil)
+        }
     }
     
     @IBAction func act6(_ sender: UIButton) {
         
         playerThirdChange = "button6"
         
-        if playerThirdChange == computerThirdChange {
+        if playerThirdChange == computerThirdChange,
+           playerSecondChange != "button"          {
             out6.backgroundColor = .red
         }
         else {
@@ -300,7 +315,8 @@ class FirstLevel: UIViewController {
         
         playerSecondChange = "button8"
         
-        if playerSecondChange == computerSecondChange {
+        if playerSecondChange == computerSecondChange,
+           playerFirstChange != "button"             {
             out8.backgroundColor = .red
         }
         else {
@@ -313,7 +329,8 @@ class FirstLevel: UIViewController {
         
         playerThirdChange = "button9"
         
-        if playerThirdChange == computerThirdChange {
+        if playerThirdChange == computerThirdChange,
+           playerSecondChange != "button"          {
             out9.backgroundColor = .red
         }
         else {
@@ -324,8 +341,16 @@ class FirstLevel: UIViewController {
 }
 
 
-//Добавить счетчик ошибок
-//Добавить лейбл Отлично при каждом прибавлении счета
-// Запретить интеракшны по порядку
-// передавать данные в рекорд
+
+
+
+
+
+
+//Добавлена передача данных
+//Добавлен лейбл - ин - гейм - вин индикатор !
+//Запрещено выделение не по порядку !
+
+//Переход к следующим уровням
+
 //Тестинг
