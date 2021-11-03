@@ -269,6 +269,10 @@ class FirstLevel: UIViewController {
     
     @IBAction func act5(_ sender: UIButton) {
         
+        if prepareMessage.text == "Вы проиграли" {
+            performSegue(withIdentifier: "unwindfirst", sender: nil)
+        }
+        
         playerSecondChange = "button5"
         
         if playerSecondChange == computerSecondChange,
@@ -279,11 +283,6 @@ class FirstLevel: UIViewController {
                Lose()
         }
         Win()
-        
-        
-        if prepareMessage.text == "Вы проиграли" {
-            performSegue(withIdentifier: "unwindfirst", sender: nil)
-        }
     }
     
     @IBAction func act6(_ sender: UIButton) {

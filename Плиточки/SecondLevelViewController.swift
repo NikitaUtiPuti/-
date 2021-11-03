@@ -368,6 +368,11 @@ class SecondLevelViewController: UIViewController {
     }
     
     @IBAction func actt6(_ sender: UIButton) {
+        
+        if prepareMessage.text == "Вы проиграли" {
+            performSegue(withIdentifier: "unwindsecond", sender: nil)
+        }
+        
         playerSecondChange = "button6"
         
         if playerSecondChange == computerSecondChange,
@@ -378,10 +383,6 @@ class SecondLevelViewController: UIViewController {
                Lose()
         }
         Win()
-        
-        if prepareMessage.text == "Вы проиграли" {
-            performSegue(withIdentifier: "unwindsecond", sender: nil)
-        }
     }
     
     @IBAction func actt7(_ sender: UIButton) {
@@ -436,6 +437,11 @@ class SecondLevelViewController: UIViewController {
     }
     
     @IBAction func actt11(_ sender: UIButton) {
+        
+        if prepareMessage.text == "Вы проиграли" {
+            performSegue(withIdentifier: "unwindsecond", sender: nil)
+        }
+        
         playerThirdChange = "button11"
         
         if playerThirdChange == computerThirdChange,
@@ -446,10 +452,6 @@ class SecondLevelViewController: UIViewController {
                Lose()
         }
         Win()
-        
-        if prepareMessage.text == "Вы проиграли" {
-            performSegue(withIdentifier: "unwindsecond", sender: nil)
-        }
     }
     
     @IBAction func actt12(_ sender: UIButton) {

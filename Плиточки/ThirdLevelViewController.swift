@@ -580,6 +580,11 @@ class ThirdLevelViewController: UIViewController {
     }
     
     @IBAction func acttt13(_ sender: UIButton) {
+        
+        if prepareMessage.text == "Вы проиграли" {
+            performSegue(withIdentifier: "unwindsecond", sender: nil)
+        }
+        
         playerThirdChange = "button13"
         
         if playerThirdChange == computerThirdChange,
@@ -590,10 +595,6 @@ class ThirdLevelViewController: UIViewController {
                Lose()
         }
         Win()
-        
-        if prepareMessage.text == "Вы проиграли" {
-            performSegue(withIdentifier: "unwindthird", sender: nil)
-        }
     }
     
     @IBAction func acttt14(_ sender: UIButton) {
