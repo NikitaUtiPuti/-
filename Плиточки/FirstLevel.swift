@@ -71,7 +71,7 @@ class FirstLevel: UIViewController {
         } else if prepareCount == -2 {
             timer1 = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(ComputerChangeTimer), userInfo: nil, repeats: true)
             prepareMessage.text = "Повтори!"
-            interactionOn()
+            //interactionOn()
             //timer.invalidate()
             //prepareCount = 4
         } else { return }
@@ -103,6 +103,7 @@ class FirstLevel: UIViewController {
             default: return
             }
         case -0.5: allBackgroundDefault()
+                   interactionOn()
                    prepareMessage.text = "Повтори!"
         default: return
         }
@@ -205,6 +206,7 @@ class FirstLevel: UIViewController {
         computerChangeCount = 2.0
         prepareCount = -2
         prepareMessage.text = goodjob.randomElement()
+        interactionOff()
         }
     }
     
@@ -351,7 +353,10 @@ class FirstLevel: UIViewController {
 
 //Переход к следующим уровням
 
-//Тестинг
 
 
-//Подключить REALM
+
+//Подключить REALM (Модель: имя и рекорд)
+//(Имя вводится при новом рекорде, рекорд отображаетя на мэйн экране а имя и рекорд на странице с рекордами)
+//(Все это происходит на отдельном вьюконтроллере который выкидывает на страницу рекордов с уже добавленной новой записью ИМЯ-РЕКОРД
+

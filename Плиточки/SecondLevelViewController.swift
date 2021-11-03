@@ -86,7 +86,7 @@ class SecondLevelViewController: UIViewController {
         } else if prepareCount == -2 {
             timer1 = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(ComputerChangeTimer), userInfo: nil, repeats: true)
             prepareMessage.text = "Повтори!"
-            interactionOn()
+            //interactionOn()
             //timer.invalidate()
             //prepareCount = 4
         } else { return }
@@ -129,6 +129,7 @@ class SecondLevelViewController: UIViewController {
             default: return
             }
         case -1.0: allBackgroundDefault()
+                   interactionOn()
                    prepareMessage.text = "Повтори!"
         default: return
         }
@@ -299,6 +300,7 @@ class SecondLevelViewController: UIViewController {
         computerChangeCount = 2.0
         prepareCount = -2
         prepareMessage.text = goodjob.randomElement()
+        interactionOff()
         }
     }
     
