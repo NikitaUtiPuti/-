@@ -54,6 +54,13 @@ class LevelandPlayViewController: UIViewController {
         let schet2lvl = secondrec.scoreLabel.text!
         self.secondLvlRecord.text = "Рекорд \(schet2lvl)"
     }
+    
+    @IBAction func unwindSegueToMainScreen3(segue: UIStoryboardSegue) {
+        guard segue.identifier == "unwindthird" else {return}
+        guard let thirdrec = segue.source as? ThirdLevelViewController else {return}
+        let schet3lvl = thirdrec.scoreLabel.text!
+        self.thirdLvlRecord.text = "Рекорд \(schet3lvl)"
+    }
 }
 
 
