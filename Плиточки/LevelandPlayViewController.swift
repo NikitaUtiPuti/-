@@ -42,14 +42,18 @@ class LevelandPlayViewController: UIViewController {
     
     
     @IBAction func unwindSegueToMainScreen(segue: UIStoryboardSegue) {
-        guard segue.identifier == "unwindSegue" else {return}
-        guard let game = segue.source as? FirstLevel else {return}
-        let schet = game.scoreLabel.text!
-        self.firstLvlRecord.text = "Рекорд \(schet)"
+        guard segue.identifier == "unwindfirst" else {return}
+        guard let firstrec = segue.source as? FirstLevel else {return}
+        let schet1lvl = firstrec.scoreLabel.text!
+        self.firstLvlRecord.text = "Рекорд \(schet1lvl)"
     }
     
-
-    
+    @IBAction func unwindSegueToMainScreen2(segue: UIStoryboardSegue) {
+        guard segue.identifier == "unwindsecond" else {return}
+        guard let secondrec = segue.source as? SecondLevelViewController else {return}
+        let schet2lvl = secondrec.scoreLabel.text!
+        self.secondLvlRecord.text = "Рекорд \(schet2lvl)"
+    }
 }
 
 

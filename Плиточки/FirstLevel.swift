@@ -280,7 +280,7 @@ class FirstLevel: UIViewController {
         
         
         if prepareMessage.text == "Вы проиграли" {
-            performSegue(withIdentifier: "unwindSegue", sender: nil)
+            performSegue(withIdentifier: "unwindfirst", sender: nil)
         }
     }
     
@@ -347,10 +347,11 @@ class FirstLevel: UIViewController {
 
 
 
-//Добавлена передача данных
-//Добавлен лейбл - ин - гейм - вин индикатор !
-//Запрещено выделение не по порядку !
+
 
 //Переход к следующим уровням
 
 //Тестинг
+
+
+//Подключить REALM
